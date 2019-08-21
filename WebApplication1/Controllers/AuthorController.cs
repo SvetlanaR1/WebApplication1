@@ -15,8 +15,9 @@ namespace WebApplication1.Controllers
             using (Model1 db = new Model1())
             {
                 authors = db.Authors.ToList();
+
             }
-            return View(authors);
+            return View(authors) ;
         }
         public ActionResult Create()
         {
